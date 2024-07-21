@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Foodie</string>
+
+<!--    Fragment CategoriesPage-->
+    <string name="foodCategoriesText">Categories</string>
+    <string name="cat_text_1">Pizza</string>
+    <string name="cat_text_2">Burger</string>
+    <string name="cat_text_3">Pasta</string>
+    <string name="cat_text_4">Vegetarian</string>
+    <string name="cat_text_5">Chinese</string>
+    <string name="cat_text_6">Local Cuisine</string>
+
+<!--    Fragment FoodPage-->
+    <string name="food_name">Loading Name</string>
+    <string name="food_prep_time">Loading Prep Time</string>
+    <string name="food_servings">Loading Servings</string>
+    <string name="food_cook_time">Loading Cook Time</string>
+    <string name="food_ingredients_title">Ingredients</string>
+    <string name="food_ingredients_text">Loading Ingredients</string>
+    <string name="food_instructions_title">Instructions</string>
+    <string name="food_instructions_text">Loading Instructions</string>
+
+
+<!--    Fragment MyRecipesPage-->
+    <string name="myRecipes_title">My Recipes</string>
+
+<!--    Fragment RecipesPage-->
+    <string name="food_cat_name">Loading Category</string>
+
+<!--    Fragment Settings-->
+    <string name="settings_title">Settings</string>
+    <string name="settings_clear_all_data_text">Clicking the button would clear all the recipes that you are currently storing in &quot;My Recipes&quot;</string>
+    <string name="settings_diet_title">Diet type:</string>
+    <string name="settings_number_of_recipes">100</string>
+    <string name="settings_number_of_messages_text">Enter the number of recipes to be shown on Recipes Page(Number from 0 – 100)</string>
+    <string name="settings_set_location"/>
+    <string name="settings_location_text">Choose a Location from which would be used to show you local cuisine</string>
+    <string name="settings_save_all">Save All Data</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

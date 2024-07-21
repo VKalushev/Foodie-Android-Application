@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/foodPage"
+        android:name="vk.my.code.foodie.FoodPage"
+        android:label="fragment_food_page"
+        tools:layout="@layout/fragment_food_page">
+        <action
+            android:id="@+id/action_foodPage_to_myRecipes"
+            app:destination="@id/myRecipes" />
+        <action
+            android:id="@+id/action_foodPage_to_categoriesPage"
+            app:destination="@id/categoriesPage" />
+        <argument
+            android:name="recipeID"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_foodPage_to_settingsPage"
+            app:destination="@id/settingsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="vk.my.code.foodie.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_categoriesPage"
+            app:destination="@id/categoriesPage" />
+        <action
+            android:id="@+id/action_homePage_to_recipesPage"
+            app:destination="@id/recipesPage" />
+        <action
+            android:id="@+id/action_homePage_to_settingsPage"
+            app:destination="@id/settingsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesPage"
+        android:name="vk.my.code.foodie.CategoriesPage"
+        android:label="fragment_categories_page"
+        tools:layout="@layout/fragment_categories_page" >
+        <action
+            android:id="@+id/action_categoriesPage_to_myRecipes"
+            app:destination="@id/myRecipes" />
+        <action
+            android:id="@+id/action_categoriesPage_to_settingsPage"
+            app:destination="@id/settingsPage" />
+        <action
+            android:id="@+id/action_categoriesPage_to_recipesPage"
+            app:destination="@id/recipesPage" />
+        <action
+            android:id="@+id/action_categoriesPage_to_recipesPage2"
+            app:destination="@id/recipesPage" />
+        <action
+            android:id="@+id/action_categoriesPage_to_recipesPage3"
+            app:destination="@id/recipesPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRecipes"
+        android:name="vk.my.code.foodie.MyRecipes"
+        android:label="fragment_my_recipes"
+        tools:layout="@layout/fragment_my_recipes" >
+        <action
+            android:id="@+id/action_myRecipes_to_categoriesPage"
+            app:destination="@id/categoriesPage" />
+        <action
+            android:id="@+id/action_myRecipes_to_settingsPage"
+            app:destination="@id/settingsPage" />
+        <action
+            android:id="@+id/action_myRecipes_to_foodPage"
+            app:destination="@id/foodPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsPage"
+        android:name="vk.my.code.foodie.SettingsPage"
+        android:label="fragment_settings_page"
+        tools:layout="@layout/fragment_settings_page" >
+        <action
+            android:id="@+id/action_settingsPage_to_myRecipes"
+            app:destination="@id/myRecipes" />
+        <action
+            android:id="@+id/action_settingsPage_to_categoriesPage"
+            app:destination="@id/categoriesPage" />
+        <action
+            android:id="@+id/action_settingsPage_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipesPage"
+        android:name="vk.my.code.foodie.RecipesPage"
+        android:label="fragment_recipes_page"
+        tools:layout="@layout/fragment_recipes_page" >
+        <action
+            android:id="@+id/action_recipesPage_to_myRecipes"
+            app:destination="@id/myRecipes" />
+        <action
+            android:id="@+id/action_recipesPage_to_categoriesPage"
+            app:destination="@id/categoriesPage" />
+        <action
+            android:id="@+id/action_recipesPage_to_settingsPage"
+            app:destination="@id/settingsPage" />
+        <action
+            android:id="@+id/action_recipesPage_to_foodPage"
+            app:destination="@id/foodPage" />
+    </fragment>
+</navigation>

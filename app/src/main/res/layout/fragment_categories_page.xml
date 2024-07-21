@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cat_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesPage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/cat_image_6"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/cat_text_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Local Cuisine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCategory2">
+
+        <ImageView
+            android:id="@+id/cat_image_4"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/cat_text_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Vegetarian"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCategory5"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCategory3">
+
+        <ImageView
+            android:id="@+id/cat_image_5"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/cat_text_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chinese"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCategory5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCategory3"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCategory2">
+
+        <ImageView
+            android:id="@+id/cat_image_3"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/cat_text_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pasta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCategory3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCategory2"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodCategoriesText">
+
+        <ImageView
+            android:id="@+id/cat_image_2"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/cat_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Burger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCategory2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCategory1"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodCategoriesText">
+
+        <ImageView
+            android:id="@+id/cat_image_1"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/cat_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:text="Pizza"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCategory1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/foodCategoriesText"
+        android:layout_width="193dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="270dp"
+        android:ems="10"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

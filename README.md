@@ -1,5 +1,4 @@
 # Foodie
-### Vasil_Kalushev_2000085
 
 ## App Description:
 
